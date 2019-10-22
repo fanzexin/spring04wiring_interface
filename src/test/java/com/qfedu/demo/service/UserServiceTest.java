@@ -1,5 +1,7 @@
 package com.qfedu.demo.service;
 
+import com.qfedu.demo.AppConfig;
+import com.qfedu.demo.web.UserController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,12 +19,12 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class UserServiceTest {
 
     @Autowired
-    @Qualifier("festival")
-    private UserService userService;
+
+    private UserController userController;
 
     @Test
     public void Test(){
 
-        userService.add();
+        userController.add();
     }
 }
